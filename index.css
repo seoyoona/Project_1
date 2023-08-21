@@ -1,0 +1,12 @@
+body{color: white; font-size: 200%; font-weight: bold; text-transform: uppercase; text-align: center; background: #eee;}
+.inner{margin: auto; width: 100%; max-width: 1600px;}
+header{height: 1220px; display: flex; flex-flow: column;}
+header h1{height: 800px; background: #D9D9D9;}
+header nav{height: 420px; background: #C2C1C1;}
+main{display: flex; flex-flow: column; position: relative;}
+main .quick{width: 600px; height: 500px; background: #fff; color: #444; position: absolute; top: 0; left: 0; transform: translateX(18px) translateY(-130px);}
+main .calender{height: 405px; background: #ABABAB;}
+main .banner{height: 680px; background: #979696;}
+main .snue{height: 692px; background: #868383;}
+main .media{height: 503px; background: #726E6E;}
+footer{display: flex; height: 271px; background: #555555;}
