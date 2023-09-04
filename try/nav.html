@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서울대학교</title>
+    <title>nav_preview</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/default.css">
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        .wrap{width: 100%; justify-content: center; align-items: center; margin: auto;}
+        .inner{width: 100%; max-width: 1440px;}
+        body{background: #888;}
+        ul{list-style: none;}
+        a{text-decoration: none;}
+
+        nav{justify-content: center; align-items: center; margin: auto;}
+        .gnb{display: flex; justify-content: space-around;}
+        .dep1{display: block; }
+        .dep1 a{color: #fff; font-size: 2rem; font-weight: 700;}
+    </style>
 </head>
 <body>
     <div class="wrap">
@@ -15,7 +25,7 @@
             <nav>
                 <ul class="gnb inner">
                     <li class="logo"><a href="#">
-                        <h1>서울대 logo</h1>
+                        <h1><img src="../sources/img/logo.png" alt="logo"></h1>
                     </a></li>
                     <li class="dep1 m1"><a href="#">대학</a>
                         <div class="gnb_bg">
@@ -232,51 +242,6 @@
                 </ul>
             </nav>
         </header>
-        <div class="quick">
-            <div class="inner">
-                <h2>Quick_menu</h2>
-            </div>
-        </div>
-        <div class="hero_banner">
-            <div class="inner">
-                <h2>Hero_banner</h2>
-            </div>
-        </div>
-        <main>
-            <section>
-                <div class="inner">
-                    <h2>Notification</h2>
-                </div>
-            </section>
-            <section>
-                <div class="inner">
-                    <h2>Calender</h2>
-                </div>
-            </section>
-            <section>
-                <div class="inner">
-                    <h2>News</h2>
-                </div>
-            </section>
-            <section>
-                <div class="inner">
-                    <h2>SNUE_edu</h2>
-                </div>
-            </section>
-            <section>
-                <div class="inner">
-                    <h2>Media</h2>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer_nav">
-                <div class="inner">Footer_nav</div>
-            </div>
-            <div class="footer_info">
-                <div class="inner">Footer_info</div>
-            </div>
-        </footer>
     </div>
 </body>
 </html>

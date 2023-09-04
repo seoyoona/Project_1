@@ -1,0 +1,10 @@
+/* header */
+
+/* nav */
+.nav{display: flex; justify-content: center ; align-items: center;}
+.dep1{display: flex; justify-content: space-between; align-items: center; text-align: center; margin: 0 1rem;}
+.dep1 li{display: inline-block; padding: 2rem 1rem;}
+
+/* main */
+
+/* footer */
