@@ -1,9 +1,11 @@
-.wrap { width: 100%; text-align: center; color: white; font-weight: bold; font-size: 200%; } 
-.inner { width: 100%; max-width: 1440px; margin: auto; background: rgba(255,255,255,.5); height: inherit; } 
-header { height: 20rem; } 
-header nav { background: #888; height: 20rem; } 
-.hero_banner { background: #777; height: 60rem; } 
-.quick { background: rgba(144, 144, 144, 0.5); height: 50rem; position: absolute; width: 60rem; left: 50%; top: 0; transform: translate(-40rem) translateY(70rem); } 
+.wrap { width: 100%; text-align: center; color: white; font-weight: bold; font-size: 200%; position: relative; } 
+.inner { width: 100%; max-width: 1440px; margin: auto; 
+    /* background: rgba(255,255,255,.5); */
+    height: inherit; } 
+/* header { width: 100%; height: 10rem;}  */
+/* header nav { background: #888; height: auto;}  */
+/* .bg { background: #777; height: 70rem; }  */
+/* .quick { background: rgba(144, 144, 144, 0.5); height: 50rem; position: absolute; width: 60rem; left: 50%; top: 0; transform: translate(-40rem) translateY(70rem); }  */
 main { height: 250rem; } 
 section:nth-child(1) { background: #666; height: 50rem; } 
 section:nth-child(2) { background: #555; height: 50rem; } 
