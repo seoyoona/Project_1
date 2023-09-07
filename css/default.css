@@ -58,12 +58,12 @@ main{position: relative;}
 .quick_bot .student_b5{position: relative;}
 .quick_bot .student_b7{position: relative;}
 .quick_bot .student_b8{position: relative;}
-.student_b1:before{height: 8rem; width: .2rem; background: #fff; position: absolute; top: 2rem; right: -2rem; content: ''; display: block;}
-.student_b2:before{height: 8rem; width: .2rem; background: #fff; position: absolute; top: 2rem; right: -2rem; content: ''; display: block;}
-.student_b4:before{height: 8rem; width: .2rem; background: #fff; position: absolute; top: 2rem; right: -2rem; content: ''; display: block;}
-.student_b5:before{height: 8rem; width: .2rem; background: #fff; position: absolute; top: 2rem; right: -2rem; content: ''; display: block;}
-.student_b7:before{height: 8rem; width: .2rem; background: #fff; position: absolute; top: 2rem; right: -2rem; content: ''; display: block;}
-.student_b8:before{height: 8rem; width: .2rem; background: #fff; position: absolute; top: 2rem; right: -2rem; content: ''; display: block;}
+.student_b1:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.student_b2:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.student_b4:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.student_b5:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.student_b7:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.student_b8:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
 
 .student_b1{background: url('../sources/img/gnb_txt_icon01.png') no-repeat center center; background-size: 6rem; background-position: top;}
 .student_b2{background: url('../sources/img/gnb_txt_icon01.png') no-repeat center center; background-size: 6rem; background-position: top;}
@@ -90,6 +90,13 @@ main{position: relative;}
 .prof_b7{background: url('../sources/img/gnb_txt_icon01.png') no-repeat center center; background-size: 6rem; background-position: top;}
 .prof_b8{background: url('../sources/img/gnb_txt_icon01.png') no-repeat center center; background-size: 6rem; background-position: top;}
 .prof_b9{background: url('../sources/img/gnb_txt_icon01.png') no-repeat center center; background-size: 6rem; background-position: top;}
+.prof_b1:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.prof_b2:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.prof_b4:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.prof_b5:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.prof_b7:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.prof_b8:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+
 
 .quick_bot .general_b1{position: relative;}
 .quick_bot .general_b2{position: relative;}
@@ -106,5 +113,18 @@ main{position: relative;}
 .general_b7{background: url('../sources/img/gnb_txt_icon01.png') no-repeat center center; background-size: 6rem; background-position: top;}
 .general_b8{background: url('../sources/img/gnb_txt_icon01.png') no-repeat center center; background-size: 6rem; background-position: top;}
 .general_b9{background: url('../sources/img/gnb_txt_icon01.png') no-repeat center center; background-size: 6rem; background-position: top;}
+.general_b1:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.general_b2:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.general_b4:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.general_b5:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.general_b7:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
+.general_b8:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
 
+/* notification */
+.notification{height: auto; position: relative; width: 100%; height: 60rem; background: #fff;}
+.menu_bar{width: 60rem; height: 50rem; position: absolute; top: 1rem; left: 10rem; background: #f4f4f4; border-radius: 5rem; padding-top: 5rem;}
+.menu_bar li{display: block; border-bottom: 1px solid #e2e2e2; text-align: right; padding: 1rem; padding-right: 2rem; line-height: 150%;}
+.menu_bar a{color: #222; font-weight: normal;}
+
+.n_row{display: flex; flex-direction: row; flex-wrap: nowrap;}
 /* footer */
