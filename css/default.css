@@ -1,17 +1,17 @@
 /* header */
 header{width: 100%; height: 100vh; background:  url('../sources/img/main_bg2.jpg') no-repeat center center / cover; }
 /* nav */
-nav{width: 100%; height: auto; transition: all .3 ease-in-out;  }
-.gnb{width: 100%; height: 10rem; justify-content: space-between; align-items: center; display: flex; }
+nav{width: 100%; height: auto; transition: all .3 ease-in-out; }
+.gnb{width: 100%; height: 10rem; justify-content: space-between; align-items: center; display: flex; padding: 0 3rem; }
 
 .logo{display: inline-block; width: 25rem; height: 5rem; background: url('../sources/img/logo.png') no-repeat center center / cover;}
 .logo a{text-indent: -999999999999px; color: transparent;}
 .gnb_bg{width: 100%; height: 100%; min-height: 40vh; max-height: 80vh; position: absolute; left: 0; top: 10rem; padding-bottom: 2rem; display: none; transition: all .3s ease-in-out;}
 .gnb_bg ul{display: flex;}
 .dep1{transition: all .3s ease;}
-.gnb:hover{background: #fff;}
-.gnb:hover .dep1>a{color: var(--txt);}
-.gnb:hover .logo{background: url('../sources/img/logo_black.png') no-repeat center center / cover;}
+nav:hover{background: #fff;}
+nav:hover .dep1>a{color: var(--txt);}
+nav:hover .logo{background: url('../sources/img/logo_black.png') no-repeat center center / cover;}
 .dep1.m1:hover .gnb_bg{display: block; }
 .dep1.m2:hover .gnb_bg{display: block; }
 .dep1.m3:hover .gnb_bg{display: block; }
@@ -41,8 +41,8 @@ nav{width: 100%; height: auto; transition: all .3 ease-in-out;  }
 /* bg */
 
 /* quick */
-main{position: relative;}
-.quick{background: var(--primary); height: 50rem; width: 60rem; position: absolute; left: 3rem; top: 20%; border-radius: 5rem; z-index: 99;}
+.notification .inner{position: relative;}
+.quick{background: var(--primary); height: 50rem; width: 60rem; position: absolute; left: 3rem; top: -5%; border-radius: 5rem; z-index: 99;}
 .quick_top{display: flex; justify-content: space-between; text-align: center;}
 .quick_top_btn>a{display: inline-block; width: 20rem; height: 8rem; background: var(--secondary); line-height: 8rem;}
 .quick_top_btn:first-child a{border-top-left-radius: 5rem;}
@@ -121,10 +121,30 @@ main{position: relative;}
 .general_b8:before{height: .5rem; width: .5rem; background: #fff; position: absolute; top: 50%; right: -2rem; transform: translateY(-50%); content: ''; display: block; border-radius: 100%;}
 
 /* notification */
-.notification{height: auto; position: relative; width: 100%; height: 60rem; background: #fff;}
-.menu_bar{width: 60rem; height: 50rem; position: absolute; top: 1rem; left: 10rem; background: #f4f4f4; border-radius: 5rem; padding-top: 5rem;}
-.menu_bar li{display: block; border-bottom: 1px solid #e2e2e2; text-align: right; padding: 1rem; padding-right: 2rem; line-height: 150%;}
-.menu_bar a{color: #222; font-weight: normal;}
+.notification{height: auto; position: relative; width: 100%; height: 60rem; background: #fff}
+.n_right_wrap{display: flex; position: absolute; right: 5%; top: 10%; width: 50%; height: auto;}
+.tab{display: flex; flex-direction: column; gap: 3rem; margin-top: 6rem;}
+.tab a{color: #333; font-weight: normal; font-size: 2.4rem; }
+.notification::before{content: ''; display: block; height: 45rem; width: 100%; position: absolute; left: -50%; top: 10%; background: #d2cfcf; border-top-right-radius: 5rem; border-bottom-right-radius: 5rem;}
+.tablist{display: flex; flex-direction: column; gap: 3rem; margin-top: 8rem; margin-left: 8rem; }
+.tablist a{color: #333; font-weight: normal;}
+.tablist em{background: #eee; padding:  1rem 2rem; border-radius: 5rem;}
+.tablist .date{display: inline-block; position: absolute; right: 0;}
+.tab_txt{margin-left: 6rem;}
 
-.n_row{display: flex; flex-direction: row; flex-wrap: nowrap;}
+/* calender */
+.calender ul{display: flex; width: 100%; height: 100%;}
+.calender_left{width: 25%; height: auto; background: #fff}
+.calender_slider{width: 75%; height: auto; background: lightcoral;}
+.calender_slider_btn{display: flex; justify-content: center; align-items: center; padding-bottom: 2rem;}
+.calender_slider_btn div{color: #3d4a5a; border: 1px solid #3d4a5a; border-radius: 100%; width: 4rem; height: 4rem; line-height: 5rem; vertical-align: middle; text-align: center; margin-right: 1rem;}
+.calender_slider_btn .pause_btn{line-height: 4rem;}
+.calender_slider_btn .add_btn{background: #c0e4f3; border: none;}
+.calender_title{position: relative; font-size: 6rem; text-align: left; padding-top: 5rem;}
+.calender_title::before{content: ''; display: block; height: .3rem; width: 25rem; background: #3d4a5a; position: absolute; top: 0; left: 0; }
+.calender_title,.calender_txt{color: #3d4a5a; padding-left: 2rem; padding-bottom: 2rem;}
+.calender_txt{font-size: 3rem; text-align: left; font-weight: normal;}
+.calender_txt .snue{color: var(--primary);}
+
+
 /* footer */
