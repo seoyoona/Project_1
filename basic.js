@@ -1,8 +1,21 @@
-$('.announcemnt_slider').bxSlider({
-	minSlides: 1,
+$('.announcement_slider').bxSlider({
+	auto: true,
+});
+
+$('.edu_slider_wrap').bxSlider({
+    minSlides: 3,
+	maxSlides: 3,
+	moveSlides: 1,
+	slideWidth: 800,
+	slideMargin: 30,
+	auto: true,
+})
+
+$('.m_slider').bxSlider({
+    minSlides: 2,
 	maxSlides: 2,
-	slideWidth: 170,
+	moveSlides: 1,
+	slideWidth: 280,
 	slideMargin: 10,
-	ticker: true,
-	speed: 9000
-  });
+	auto: true,
+})

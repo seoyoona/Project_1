@@ -12,6 +12,6 @@
 /* section:nth-child(3) { background: #444; height: 50rem; }  */
 /* section:nth-child(4) { background: #333; height: 50rem; }  */
 /* section:nth-child(5) { background: #222; height: 50rem; }  */
-footer { height: 27rem; } 
-.footer_nav { height: 7rem; background: #111; } 
-.footer_info { height: 20rem; background: #000; } 
+footer { height: 27rem; background: #33404f;} 
+/* .footer_nav { height: 7rem;  } 
+.footer_info { height: 20rem; }  */
