@@ -9,6 +9,8 @@ $('.edu_slider_wrap').bxSlider({
 	slideWidth: 800,
 	slideMargin: 30,
 	auto: true,
+    pager: false,
+    controls:false,
 })
 
 $('.m_slider').bxSlider({
@@ -19,3 +21,4 @@ $('.m_slider').bxSlider({
 	slideMargin: 10,
 	auto: true,
 })
+
