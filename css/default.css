@@ -1,5 +1,5 @@
 /* header */
-header { width: 100%; height: 100vh; background: url('../sources/img/main_bg2.jpg') no-repeat center center / cover; } 
+header { width: 100%; height: 100vh; background: url('../sources/img/main_bg2.jpg') no-repeat center center / cover, url('../sources/img/main_bg2.jpg') no-repeat center center / cover, url('../sources/img/main_bg3.jpg') no-repeat center center / cover; } 
 /* nav */
 nav { width: 100%; height: auto; transition: all .3 ease-in-out; } 
 .gnb { width: 100%; height: 10rem; justify-content: space-between; align-items: center; display: flex; padding: 0 3rem; } 
@@ -46,7 +46,16 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .quick_top { display: flex; justify-content: space-between; text-align: center; } 
 .quick_top_btn>a { display: inline-block; width: 20rem; height: 8rem; background: var(--secondary); line-height: 8rem; } 
 .quick_top_btn:first-child a { border-top-left-radius: 5rem; } 
-.quick_top_btn:last-child a { border-top-right-radius: 5rem; } 
+.quick_top_btn:last-child a { border-top-right-radius: 5rem; }
+
+.quick_top_btn{position: relative; }
+.student::before,.prof::before,.general::before{content: '✓'; display: block; width: 3rem; height: 3rem; border-radius: 50%; background: var(--primary); position: absolute; top: 50%; right: 10%; transform: translateY(-50%); line-height: 150%; display: none;}
+.student.active::before{display: block;}
+.prof.active::before{display: block;}
+.general.active::before{display: block;}
+.student.active>a{background: #fff; color: var(--primary);}
+.prof.active>a{background: #fff; color: var(--primary);}
+.general.active>a{background: #fff; color: var(--primary);}
 
 .quick_bot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-top: 1rem; width: 58rem; height: 40rem; position: absolute; top: 8rem; left: 1rem; } 
 .quick_bot li { width: 30%; height: 30%; } 
@@ -132,7 +141,7 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .tablist a { color: #333; font-weight: normal; } 
 .tablist em { background: #eee; padding: 1rem 2rem; border-radius: 5rem; } 
 .tablist .date { display: inline-block; position: absolute; right: 0; } 
-.tab_txt { margin-left: 6rem; } 
+.tab_txt { margin-left: 6rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; width: 30rem; line-height: 130%;} 
 
 /* calender */
 .calender { padding-bottom: 5rem; } 
