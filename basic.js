@@ -27,6 +27,11 @@ $('.m_slider').bxSlider({
 
 // quick
 $(document).ready(function(){
+
+    $(document).ready(function(){
+        // 첫 번째 li 요소에 'active' 클래스 추가
+        $(".quick_top li:first-child").addClass("active");
+
     // 초기 상태에서 모든 하위 메뉴를 숨깁니다.
     $('.prof .quick_bot, .general .quick_bot').hide();
 
@@ -44,7 +49,7 @@ $(document).ready(function(){
         // 클릭한 카테고리의 하위 메뉴를 토글합니다 (보이지 않으면 보이게, 보이면 숨기게 합니다).
         $(this).find('.quick_bot').toggle();
     });
-});
+})});
 
 // quick_top_btn
 $(document).ready(function(){
@@ -60,3 +65,21 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).ready(function(){
+
+    $(document).ready(function(){
+        // 첫 번째 li 요소에 'active' 클래스 추가
+        $(".tab li:first").addClass("active");
+      
+    $(".tab li").click(function(){
+      // 모든 li 요소에서 'active' 클래스 제거
+      $(".tab li").removeClass("active");
+
+      $('.tab li').click(function(e) {
+        e.preventDefault(); // 기본 동작(링크 이동)을 막습니다.
+  
+      // 클릭된 li 요소에 'active' 클래스 추가
+      $(this).addClass("active");
+    })});
+})});
