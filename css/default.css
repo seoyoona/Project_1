@@ -50,7 +50,7 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 
 .quick_top_btn{position: relative; }
 .student::before,.prof::before,.general::before{content: '✓'; display: block; width: 3rem; height: 3rem; border-radius: 50%; background: var(--primary); position: absolute; top: 50%; right: 10%; transform: translateY(-50%); line-height: 150%; display: none;}
-.student.active::before{display: block;}
+.student.active:before{display: block;}
 .prof.active::before{display: block;}
 .general.active::before{display: block;}
 .student.active>a{background: #fff; color: var(--primary);}
@@ -181,7 +181,11 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .announcement_slider { position: relative; } 
 .announcement_slider div { position: absolute; top: 0; left: 0rem; } 
 .announcement_slider img { width: 450px; height: 420px; border-radius: 5rem; } 
-.SNUE_news { width: 60%; } 
+.SNUE_news { width: 84%; height: auto; padding-left: 15rem; ; justify-content: center; align-items: center;} 
+.news_slider{width: 100%; height: 100%; display: flex; margin-top: 10rem; }
+.news_slider li{display: inline-block; padding-left: 3rem; height: 28rem; background: #e9ebed; border-radius: 1.25rem;}
+.news_slider li:hover{border: 4px solid var(--primary);}
+.news_slider li img{ height: 100%; overflow: hidden;}
 .news_slider_btn { display: flex; justify-content: center; align-items: center; padding-bottom: 2rem; position: absolute; bottom: 0; left: 12%; } 
 .news_slider_btn div { color: #3d4a5a; border: 1px solid #3d4a5a; border-radius: 100%; width: 4rem; height: 4rem; line-height: 5rem; vertical-align: middle; text-align: center; margin-right: 1rem; } 
 .news_slider_btn .pause_btn { line-height: 4rem; } 
@@ -199,17 +203,17 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 
 /* SNUE edu */
 .snue_edu{position: relative; width: 100%; height: 60rem; background: url('../sources/img/edu_bg.jpg'); }
-.snue_edu:before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 1px); background: url('../sources/img/edu_bg1.png') no-repeat top center / 100% auto, url('../sources/img/edu_bg2.png') no-repeat bottom center / 100% auto; }
+.snue_edu:before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: calc(100% + 20px); background: url('../sources/img/edu_bg1.png') no-repeat top center / 100% auto, url('../sources/img/edu_bg2.png') no-repeat bottom center / 100% auto; }
 .snue_edu img{vertical-align: middle;}
 .snue_edu h2{color:#333; text-align: left; padding: 2rem; font-size: 3rem; font-weight: 500; vertical-align: top;}
 .snue_edu h2 span{ position: relative;}
 .snue_edu h2 span:before{width: 15rem; height: .3rem; content: '' ; display: block; background: #3d4a5a; position: absolute; left: 100%; top: -2rem;}
 .snue_edu em{color: #0070e2; font-size: 4rem; font-weight: 600;}
 
-.edu_slider_wrap{display: flex; justify-content: center; align-items: center;}
-.edu_slider_wrap .inbox{position: relative; width: 30rem; height: 30rem; display: flex; flex-direction: column; justify-content: center; align-items: center;}
-.edu_slider_wrap .inbox .title{ padding-top: 3rem; }
-.edu_slider_wrap .inbox .img{position: relative; display: block; width: 25rem; height: 25rem; border-radius: 100%; background: url('../sources/img/web_img1.jpg') no-repeat center /cover; box-shadow: 9px 9px 20px rgba(0,0,0,0.10);}
+.edu_slider_wrap{display: flex; justify-content: center; align-items: center; height: 100%; width: 100%;}
+.edu_slider_wrap .inbox{position: relative; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.edu_slider_wrap .inbox .title{ padding-top: 3rem; width: 20rem; height: 5rem;}
+.edu_slider_wrap .inbox .img{margin-top: 5rem; position: relative; display: block; width: 30rem; height: 30rem; border-radius: 100%; background: url('../sources/img/web_img1.jpg') no-repeat center /cover; box-shadow: 9px 9px 20px rgba(0,0,0,0.10);}
 
 .edu_title{display: flex; position: relative;}
 .snue_control_btn { display: flex; justify-content: space-between; align-items: center; padding-bottom: 2rem; position: absolute; top: 60%; right: 5%; } 
@@ -247,12 +251,15 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .subtitle_box span{font-size: 1.6rem; padding-left: 2rem;}
 
 /* footer */
-footer{height: auto; width: 100%; font-weight: normal; padding-bottom: 3rem; justify-content: center; align-items: center;}
+footer{  background: #33404f; height: auto; width: 100%; font-weight: normal; padding-bottom: 3rem; justify-content: center; align-items: center;}
 .footer_row{display: flex; justify-content: space-between ; align-items: center; }
-.footer_nav{justify-content: left; align-items: left;}
+.footer_nav{justify-content: left; align-items: left; position: relative;}
 .footer_nav ul{display: flex; text-align: left; }
-.footer_nav ul li{border: 1px solid #8c95a1; width: 40rem; padding: 1.5rem 1rem; margin-bottom: 1rem; vertical-align: middle; }
+.footer_nav ul li{border: 1px solid #8c95a1; width: 40rem; padding: 1.5rem 1rem; margin-bottom: 1rem; vertical-align: middle; cursor: pointer;}
 .footer_nav ul li:nth-child(1){border-right: none;}
+.f_nav_dep2{list-style: disc; width: 80rem; height: auto; display: flex; flex-wrap: wrap; background: #33404f; border: 1px solid #8c95a1; padding: 3rem 5rem; position: absolute; bottom: 100%; left: 0; justify-content: space-between; align-items: center;}
+.f_nav_dep2 li{flex-basis: 33%;}
+.f_nav_dep2 a{font-size: 1.6rem; font-weight: light; }
 .footer_nav .f_nav_dep2 li{border: none; padding: 0;}
 .footer_nav ul li .fa-bars{float: right;}
 .footer_sns ul,.footer_sns div{display: flex; padding: 0 2rem;}

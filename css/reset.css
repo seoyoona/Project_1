@@ -31,6 +31,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html{font-size: 62.5%; font-family: 'SCoreDream';}
 .wrap { margin: auto; } 
+.inner { width: 100%; max-width: 1440px; margin: auto; 
+    /* background: rgba(255,255,255,.5); */
+    height: inherit; }
 ul { list-style: none; } 
 a { text-decoration: none; color: white; } 
 :root{--primary:#0098D9; --txt: #000; --secondary:#0070d9; --background:#fff; }
