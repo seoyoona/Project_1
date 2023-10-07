@@ -296,7 +296,9 @@
                                     <input type="text" name="search" placeholder="검색어를 입력하세요">
                                 </form>
                                 <i class="fa-solid fa-magnifying-glass"></i>
-                                <span class="close_btn">close</span><i class="fa-solid fa-xmark"></i>
+                                <div class="close_btn">
+                                    <span>close</span><i class="fa-solid fa-xmark"></i>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -597,22 +599,24 @@
                         <li class="SNUE_news">
                             <h2><span class="snue">SNUE</span>뉴스</h2>
                             <h2><span class="gallery"><a href="#">Gallery</a></span></h2>
-                            <ul class="news_slider">
-                                <li><a href="#"><img src="sources/img/IMAGE-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="sources/img/IMAGE-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="sources/img/IMAGE-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="sources/img/IMAGE-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="sources/img/IMAGE-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="sources/img/IMAGE-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="sources/img/IMAGE-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="sources/img/IMAGE-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="sources/img/IMAGE-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="sources/img/IMAGE-1.jpg" alt=""></a></li>
-                            </ul>
+                            <div class="news_slider">
+                                <ul class="slides_container">
+                                    <li><a href="#"><img src="sources/img/news_slider1.png" alt=""><span class="news_title">서울교육대학교-미네소타대학교 국제교류 프로그램</span><span class="news_date">2023.07.28</span></a></li>
+                                    <li><a href="#"><img src="sources/img/news_slider1.png" alt=""><span class="news_title">서울교육대학교-미네소타대학교 국제교류 프로그램</span><span class="news_date">2023.07.28</span></a></li>
+                                    <li><a href="#"><img src="sources/img/news_slider1.png" alt=""><span class="news_title">서울교육대학교-미네소타대학교 국제교류 프로그램</span><span class="news_date">2023.07.28</span></a></li>
+                                    <li><a href="#"><img src="sources/img/news_slider1.png" alt=""><span class="news_title">서울교육대학교-미네소타대학교 국제교류 프로그램</span><span class="news_date">2023.07.28</span></a></li>
+                                    <li><a href="#"><img src="sources/img/news_slider1.png" alt=""><span class="news_title">서울교육대학교-미네소타대학교 국제교류 프로그램</span><span class="news_date">2023.07.28</span></a></li>
+                                    <li><a href="#"><img src="sources/img/news_slider1.png" alt=""><span class="news_title">서울교육대학교-미네소타대학교 국제교류 프로그램</span><span class="news_date">2023.07.28</span></a></li>
+                                    <li><a href="#"><img src="sources/img/news_slider1.png" alt=""><span class="news_title">서울교육대학교-미네소타대학교 국제교류 프로그램</span><span class="news_date">2023.07.28</span></a></li>
+                                    <li><a href="#"><img src="sources/img/news_slider1.png" alt=""><span class="news_title">서울교육대학교-미네소타대학교 국제교류 프로그램</span><span class="news_date">2023.07.28</span></a></li>
+                                    <li><a href="#"><img src="sources/img/news_slider1.png" alt=""><span class="news_title">서울교육대학교-미네소타대학교 국제교류 프로그램</span><span class="news_date">2023.07.28</span></a></li>
+                                    <li><a href="#"><img src="sources/img/news_slider1.png" alt=""><span class="news_title">서울교육대학교-미네소타대학교 국제교류 프로그램</span><span class="news_date">2023.07.28</span></a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="control">
                             <div class="left_btn"><span class="material-symbols-outlined">chevron_left</span></div>
-                            <div class="pause_btn"><i class="fa-solid fa-pause"></i></div>
+                            <div class="pause_btn" data-paused="false"><i class="fa-solid fa-pause"></i></div>
                             <div class="right_btn"><span class="material-symbols-outlined">chevron_right</span></div>
                             <div class="add_btn"><span class="material-symbols-outlined">add</span></div>
                         </li>
@@ -634,7 +638,7 @@
                         <div class="item">
                             <a href="#">
                                 <div class="inbox">
-                                    <span class="img"></span>
+                                    <span class="img art"></span>
                                     <div class="title">미술영재교육원</div>
                                 </div>
                             </a>
@@ -642,7 +646,7 @@
                         <div class="item">
                             <a href="#">
                                 <div class="inbox">
-                                    <span class="img"></span>
+                                    <span class="img international_lang"></span>
                                     <div class="title">국제어학원</div>
                                 </div>
                             </a>
@@ -650,7 +654,7 @@
                         <div class="item">
                             <a href="#">
                                 <div class="inbox">
-                                    <span class="img"></span>
+                                    <span class="img software"></span>
                                     <div class="title">소프트웨어영재교육원</div>
                                 </div>
                             </a>
@@ -658,7 +662,7 @@
                         <div class="item">
                             <a href="#">
                                 <div class="inbox">
-                                    <span class="img"></span>
+                                    <span class="img science"></span>
                                     <div class="title">과학영재교육원</div>
                                 </div>
                             </a>
@@ -666,7 +670,7 @@
                         <div class="item">
                             <a href="#">
                                 <div class="inbox">
-                                    <span class="img"></span>
+                                    <span class="img lifelong_edu"></span>
                                     <div class="title">평생영재교육원</div>
                                 </div>
                             </a>
@@ -674,15 +678,15 @@
                         <div class="item">
                             <a href="#">
                                 <div class="inbox">
-                                    <span class="img"></span>
+                                    <span class="img dhs"></span>
                                     <div class="title">독학사</div>
                                 </div>
                             </a>
                         </div>
                         <div class="item">
                             <a href="#">
-                                <div class="inbox">
-                                    <span class="img"></span>
+                                <div class="inbox ">
+                                    <span class="img edu_training"></span>
                                     <div class="title">교육연수원</div>
                                 </div>
                             </a>
@@ -690,7 +694,7 @@
                         <div class="item">
                             <a href="#">
                                 <div class="inbox">
-                                    <span class="img"></span>
+                                    <span class="img music"></span>
                                     <div class="title">음악영재교육원</div>
                                 </div>
                             </a>

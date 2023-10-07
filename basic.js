@@ -1,3 +1,5 @@
+
+
 // announcement
 $('.announcement_slider').bxSlider({
 	auto: true,
@@ -14,21 +16,91 @@ $('.edu_slider_wrap').bxSlider({
 	auto: true,
     pager: false,
     controls:false,
-})
+});
 
 // SNUE news
 
-$('.news_slider').bxSlider({
-    minSlides: 1,
-	maxSlides: 3,
-	moveSlides: 1,
-    slideWidth: 600,
-    slideMargin: 30,
-	auto: true,
-    pager: false,
-    controls:false,
-    ariaHidden: false,
-})
+const list = document.querySelector('.slides_container');
+const listLi = document.querySelectorAll('.slides_container li a');
+const show_num = 2;
+const total = listLi.length;
+const li_width = parseInt(getComputedStyle(listLi[0]).width);
+let num = 0;
+
+for(let i = 0; i < show_num; i++){
+    var copyobj = listLi[i].cloneNode(true);
+    list.appendChild(copyobj);
+}
+
+// Copy the first slide and append it to the end
+var firstCopyObj = listLi[0].cloneNode(true);
+list.appendChild(firstCopyObj);
+
+document.querySelector('.control > .right_btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    moveRight();
+});
+
+document.querySelector('.control > .left_btn').addEventListener('click', function(e){
+    e.preventDefault();
+
+    if (num == 0){
+        num=total;
+        list.style.transition ='none';
+        list.style.marginLeft=-li_width * num + 'px';
+   }
+
+   setTimeout(function(){
+       num--;
+       list.style.transition='margin-left .5s'
+       ;
+       list.style.marginLeft=-li_width * num +'px';
+   },50);
+});
+
+function moveRight() {
+    num++;
+    if (num == total+1){ // Notice this change here
+        // Reset to the actual first slide without transition after transition ends.
+        setTimeout(function() {
+            num = 0;
+            list.style.transition ='none';
+            list.style.marginLeft='0px';   
+        }, 500); // Adjust this delay to match your transition duration
+   } else {
+       setTimeout(function(){
+           // This is your original code.
+           // It is executed when it's not transitioning from last slide to the first.
+           list.style.transition='margin-left .5s'
+           ;
+           list.style.marginLeft=-li_width * num +'px';
+      },50);
+   }
+}
+
+// Auto slide every 2 seconds
+let autoSlideIntervalId;
+
+function startAutoSlide() {
+    autoSlideIntervalId = setInterval(moveRight, 2000);
+}
+
+startAutoSlide(); 
+
+// Pause button functionality
+document.querySelector('.control>.pause_btn').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    if (this.dataset.paused === 'true') { 
+        startAutoSlide(); 
+        this.dataset.paused = 'false'; 
+      } else { 
+          clearInterval(autoSlideIntervalId); 
+          this.dataset.paused ='true'; 
+      }
+});
+
+
 
 
 // media
@@ -40,6 +112,7 @@ $('.m_slider').bxSlider({
 	slideMargin: 10,
 	auto: true,
 })
+
 
 // quick_top_btn
 $(document).ready(function(){
@@ -120,9 +193,14 @@ $(document).ready(function() {
 document.addEventListener('DOMContentLoaded', function() {
     var iconSearch = document.querySelector('.icon_search');
     var gnbBg = document.querySelector('.icon_search>.gnb_bg');
+    var closeBtn = document.querySelector('.search_window>.close_btn');
 
     iconSearch.addEventListener('click', function(e) {
         e.preventDefault();
         gnbBg.style.display = 'block';
+    });
+    closeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        gnbBg.style.display = 'none';
     });
 });
