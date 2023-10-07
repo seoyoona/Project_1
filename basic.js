@@ -108,3 +108,21 @@ $(document).ready(function(){
         $(this).addClass('active');
     });
 });
+
+// fullmenu.active
+$(document).ready(function() {
+    $('.icon_menu').on('click',function(){
+       $('.fullmenu_wrap').toggleClass('active');
+    });
+ });
+
+//  icon_search
+document.addEventListener('DOMContentLoaded', function() {
+    var iconSearch = document.querySelector('.icon_search');
+    var gnbBg = document.querySelector('.icon_search>.gnb_bg');
+
+    iconSearch.addEventListener('click', function(e) {
+        e.preventDefault();
+        gnbBg.style.display = 'block';
+    });
+});
