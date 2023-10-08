@@ -9,7 +9,7 @@ $(document).ready(function() {
 document.addEventListener('DOMContentLoaded', function() {
     var iconSearch = document.querySelector('.icon_search');
     var gnbBg = document.querySelector('.icon_search>.gnb_bg');
-    var closeBtn = document.querySelector('.search_window>.close_btn');
+    var closeBtn = document.querySelector('.search_window .close_btn');
 
     iconSearch.addEventListener('click', function(e) {
         e.preventDefault();

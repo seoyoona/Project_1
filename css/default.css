@@ -183,7 +183,7 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .tablist { display: flex; flex-direction: column; gap: 3rem; margin-top: 8rem; margin-left: 8rem; } 
 .tablist a { color: #333; font-weight: normal; position: relative; } 
 .tablist em { background: #eee; padding: 1rem 2rem; border-radius: 5rem; } 
-.tablist .date { display: inline-block; float: right; transform: translateX(10rem); } 
+.tablist .date { float: right; transform: translateX(10rem); } 
 .tab_txt { margin-left: 6rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; width: 30rem; line-height: 130%; } 
 
 .tab li.active:nth-of-type(1):before { content: '전체'; display: block; background: #3d4a5a; width: 10rem; height: 5rem; border-radius: 5rem; position: absolute; top: -80%; left: 100%; color:#fff; line-height:5rem; text-align:left; padding-left: 1rem; font-weight: 600; } 
@@ -222,7 +222,8 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .announcement h2 { color: #3d4a5a; font-size: 3rem; font-weight: 600; text-align: left; padding-left: 2rem; padding-bottom: 5rem; } 
 .announcement div { color: #3d4a5a; } 
 .announcement_slider { position: relative; } 
-.announcement_slider div { position: absolute; top: 0; left: 0rem; } 
+.announcement_slider div { position: absolute; top: 0; left: 0rem; cursor: pointer;} 
+.announcement_slider div:hover img{transform: scale(1.1); transition: all 0.3s ease-in-out;} 
 .announcement_slider img { width: 450px; height: 420px; border-radius: 5rem; } 
 .SNUE_news { width: 84%; height: auto; padding-left: 15rem; justify-content: center; align-items: center; } 
 .news_slider { width: 100%; overflow: hidden; } 
@@ -260,7 +261,17 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 
 .edu_slider_wrap { display: flex; justify-content: center; align-items: center; height: 100%; width: 100%; } 
 .edu_slider_wrap .inbox { position: relative; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; } 
+.edu_slider_wrap .inbox::before{content: ''; display: block; position: absolute; top: 1rem; left: 0; width: 80%; height: 100%; background: url('../sources/img/edu_point2.png')no-repeat center bottom / contain ; visibility: hidden; } 
+.edu_slider_wrap .inbox::after{content: ''; display: block; position: absolute; top: 0rem; right: 0; width: 10rem; height: 100%; background: url('../sources/img/edu_point1.png')no-repeat center top/ contain;  visibility: hidden; } 
 .edu_slider_wrap .inbox .title { padding-top: 2rem; width: 25rem; height: 5rem; color: #333; font-weight: 700; font-size: 2.4rem; } 
+.edu_slider_wrap .inbox .img::before {content: '+'; display: block; width: 5rem; height: 5rem; background: #ffcc00; position: absolute; bottom: 0; right: 3rem; font-size: 3rem; border-radius: 100%; line-height: 5rem; color: #333; visibility: hidden; z-index: 15; } 
+.edu_slider_wrap .inbox .img::after {content: ''; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #000; border-radius: 100%; opacity: 50%; visibility: hidden;} 
+.inbox:hover::before{visibility: visible;}
+.inbox:hover::after{visibility: visible;}
+.inbox:hover .img::before{visibility: visible;}
+.inbox:hover .img::after{visibility: visible;}
+.inbox:hover .title{color: transparent;}
+
 .edu_slider_wrap .inbox .img.art { margin-top: 5rem; position: relative; display: block; width: 30rem; height: 30rem; border-radius: 100%; background: url('../sources/img/web_img2.jpg') no-repeat center /cover; box-shadow: 9px 9px 20px rgba(0,0,0,0.10); } 
 .edu_slider_wrap .inbox .img.international_lang { margin-top: 5rem; position: relative; display: block; width: 30rem; height: 30rem; border-radius: 100%; background: url('../sources/img/web_img3.jpg') no-repeat center /cover; box-shadow: 9px 9px 20px rgba(0,0,0,0.10); } 
 .edu_slider_wrap .inbox .img.software { margin-top: 5rem; position: relative; display: block; width: 30rem; height: 30rem; border-radius: 100%; background: url('../sources/img/web_img4.jpg') no-repeat center /cover; box-shadow: 9px 9px 20px rgba(0,0,0,0.10); } 
