@@ -306,8 +306,12 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .media_control .add_btn { background: #c0e4f3; border: none; } 
 
 .bx-viewport { height: 43rem !important; } 
-.m_slider { margin-top: 10rem; } 
-.m_slider img { border-radius: 2.5rem; } 
+.m_slider { margin-top: 12rem; } 
+.m_slider a{ position: relative;}
+.m_slider .news_cap{position: absolute; top: 3px; left: 3px; background:#e5e6e8; width: 10rem; height: 4rem; font-weight: 400; font-size: 1.8rem; color: #333; line-height: 4rem; border-radius: 1em 0 1rem 0;}
+.m_slider img{ border-radius: 2.5rem; border: 3px solid transparent; cursor: pointer; width: 100%;}
+.m_slider a:hover img{border: 3px solid var(--primary);}
+.m_slider a:hover .news_cap{background: var(--primary); color: #fff;}
 
 .edu_youtube { margin-right: 2rem; } 
 .edu_youtube .tit { color: #3d4a5a; font-size: 2.4rem; position: relative; text-align: left; padding: 2rem 0; margin-top: 10rem; } 

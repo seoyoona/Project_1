@@ -81,9 +81,7 @@ $(document).ready(function(){
 
 
 // announcement
-// $('.announcement_slider').bxSlider({
-// 	auto: true,
-// });
+
 
 var announceSlider;
 
