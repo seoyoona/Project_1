@@ -200,10 +200,9 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .tab li.active:nth-of-type(6)::after { content: '>'; display: block; position: absolute; left: 150%; top: 0; } 
 
 /* calender */
-.calender { padding-bottom: 5rem; } 
+.calender {margin-top: 2rem;} 
 .calender ul { display: flex; width: 100%; height: 100%; } 
-.calender_left { width: 25%; height: auto; background: #fff } 
-.calender_slider { width: 75%; height: auto; background: lightcoral; } 
+.calender_left { width: 25%; height: auto; background: #fff; margin-top: 5rem;} 
 .calender_slider_btn { display: flex; justify-content: left; align-items: center; padding-bottom: 2rem; padding-left: 2rem; } 
 .calender_slider_btn div { color: #3d4a5a; border: 1px solid #3d4a5a; border-radius: 100%; width: 4rem; height: 4rem; line-height: 5rem; vertical-align: middle; text-align: center; margin-right: 1rem; } 
 .calender_slider_btn .pause_btn { line-height: 4rem; } 
@@ -213,6 +212,12 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .calender_title,.calender_txt { color: #3d4a5a; padding-left: 2rem; padding-bottom: 2rem; } 
 .calender_txt { font-size: 3rem; text-align: left; font-weight: normal; } 
 .calender_txt .snue { color: var(--primary); } 
+.calender_slider {width: 75%; height: auto; align-items: center; display: flex; padding-top: 3rem;} 
+.calender_slider .calender_item{ min-width: 35rem; max-width: 43rem; max-height: 20rem; padding: 2rem; padding-top: 0; margin-right: 2rem; margin-top: 5rem; border: 4px solid var(--primary); border-radius: 2rem; position: relative;  font-weight: 400; }
+.calender_slider .calender_item .date{width: 8rem; height: 8rem; border-radius: 50%;  position: absolute; top: -5rem; left: 2rem; background: var(--primary); line-height: 150%; padding: 1rem 0rem; font-size: 1.8rem;}
+.calender_slider .calender_item .date em{font-weight: 600; font-size: 2.6rem;}
+.calender_slider .calender_item .term{padding-top: 5rem; font-size: 1.8rem; color: #666 ;}
+.calender_slider .calender_item .tit{padding-top: 2rem; font-size: 2rem; line-height: 150%; color: #333;}
 
 /* news */
 .news { padding-top: 6rem; position: relative; } 
