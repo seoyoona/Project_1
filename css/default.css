@@ -8,6 +8,19 @@ header .popup{position: fixed; top: 30%; left: 50%; padding: 2rem; background: r
 header .popup p{line-height: 250%; position: relative; padding-top: 2.5rem; text-align: center; color: #333; font-weight: 400;}
 header .popup .close_btn{position: absolute; top: 1rem; right: 1rem; cursor: pointer; color: #333;}
 
+.open_btn{position: fixed; top: 40%; right: 0; width: 8rem; height: 5rem; background: var(--primary) ; border-radius: 3rem 0 0 3rem; font-weight: 400; line-height: 5rem; font-size: 1.6rem; z-index: 9999999999999999999999; cursor: pointer;}
+.sideNav{position: fixed; top: 40%; right: 0;z-index: 9999999999999999999999; display: none;}
+.sideNav .top{background: var(--primary); width: 11rem; height: 8rem; padding-top: 1.5rem; text-transform: uppercase; line-height: 130%; cursor: pointer;}
+.sideNav .sideList{background: #fff; color: #333; font-size: 1.8rem; font-weight: 400; position: relative;}
+.sideNav .sideList >ul >li{padding: 2rem; cursor: pointer; color: #333;}
+.sideNav .sideList >ul >li>a{color: #333;}
+.sideNav .bot{background: #000; width: 11rem; height: 6rem; padding-top: 2rem; text-transform: uppercase; cursor: pointer;}
+.sideNav .close_btn{background: #f5f5f5; width: 5rem; height: 5rem; border-radius: 50%; color: #333; line-height: 6rem; margin-top: 2rem; margin-left: 2.5rem; cursor: pointer;}
+.side_2dep{position: absolute; top: -9rem; right: 11rem; width: 20rem; height: 35rem; background: rgba(0,0,0,.5); border-radius: 3rem; text-align: left; padding: 2rem; padding-left: 3rem; list-style: disc; margin-right: 2rem;}
+.side_2dep .tit{ font-size: 3rem; list-style: none; position: relative;}
+.side_2dep .tit::before{width: 9rem; height: .1rem; background: #fff; position: absolute; bottom: 0; left: 0; content: '';}
+.side_2dep li{padding-top: 1.2rem; font-size: 1.6rem;}
+
 .main_visual{position: absolute; margin: auto; background-blend-mode: #d9d9d9; justify-content: center; align-items: center; width: 100%; height: 100vh;}
 .main_visual .visual_bg{position: relative; display: flex; justify-content: center; align-items: center; margin: auto; width: 100%; height: 100%; font-size: 1.8rem;}
 .main_visual .visual_bg>li{position: absolute;width: 100%; height: 100%; top: 0; left: 0; z-index: -1;}

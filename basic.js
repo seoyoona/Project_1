@@ -22,11 +22,27 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // popup
-const closeBtn = document.querySelector('.popup>.close_btn');
-  const popup = document.querySelector('.popup');
-  closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
-  });
+const closeBtn = document.querySelector('.close_btn');
+    const popup = document.querySelector('.popup');
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+
+// sideNav
+$(document).ready(function(){
+    $('.open_btn').on('click',function(){
+        $('.sideNav').css('display' , 'block');
+    });
+    $('.sideNav>.close_btn').on('click',function(){
+        $('.sideNav').css('display' , 'none');
+    });
+    $(".sideNav>.bot").click(function(){
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+    
+})
+
+
 
 // mainVisual
 $(function () {
