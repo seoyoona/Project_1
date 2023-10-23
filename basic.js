@@ -9,16 +9,18 @@ $(document).ready(function() {
 document.addEventListener('DOMContentLoaded', function() {
     var iconSearch = document.querySelector('.icon_search');
     var gnbBg = document.querySelector('.icon_search>.gnb_bg');
-    var closeBtn = document.querySelector('.search_window .close_btn');
+    var closeBtn = document.querySelector('.search_window>.close_btn');
 
     iconSearch.addEventListener('click', function(e) {
         e.preventDefault();
         gnbBg.style.display = 'block';
     });
-    closeBtn.addEventListener('click', function(e) {
+    closeBtn.addEventListener('click',function(e){
         e.preventDefault();
+        e.stopPropagation();
         gnbBg.style.display = 'none';
-    });
+    })
+    
 });
 
 // popup
@@ -38,6 +40,11 @@ $(document).ready(function(){
     });
     $(".sideNav>.bot").click(function(){
         $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+    $(".sideList > ul > li").click(function(e){
+        e.stopPropagation(); // 이벤트 버블링을 방지합니다.
+        $(".side_2dep").hide();
+        $(this).find('.side_2dep').show(); // 해당하는 .side_2dep 요소의 표시 상태를 변경(toggle)합니다.
     });
     
 })
@@ -142,15 +149,40 @@ $(document).ready(function(){
 // calender
 
 $(document).ready(function() {
-    $('.calender_slider').slick({
+    var slider = $('.calender_slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         infinite:true,
-        arrows:false,
-        
+        arrows:false
     });
+
+    $('.calender_slider_btn>.left_btn').on('click', function(e) {
+        e.preventDefault();
+        slider.slick('slickPrev');
+    });
+
+    $('.calender_slider_btn>.right_btn').on('click', function(e) {
+        e.preventDefault();
+        slider.slick('slickNext');
+    });
+
+    $('.calender_slider_btn>.pause_btn').on('click', function(e) {
+		e.preventDefault();
+
+		var isPaused = $(this).data('paused');
+
+		if (isPaused) { 
+			slider.slick('slickPlay');
+			$(this).data('paused', false);
+            $(this).html('<i class="fa-solid fa-pause"></i>');
+		} else { 
+			slider.slick('slickPause');
+			$(this).data('paused', true);
+            $(this).html('<i class="fa-solid fa-play"></i>');
+		}
+	});
 });
 
 
@@ -164,35 +196,35 @@ $(document).ready(function() {
         auto: true,
 
 		onSliderLoad: function() {
-            $('.news_slider_btn>.left_btn').click(function(e) {
+            $('.snue_control_btn>.left_btn').click(function(e) {
                 e.preventDefault();
-                announceSlider.goToPrevSlide();
+                slider.goToPrevSlide();
             });
-
-            $('.news_slider_btn>.right_btn').click(function(e) {
+            $('.snue_control_btn>.right_btn').click(function(e) {
                 e.preventDefault();
-                announceSlider.goToNextSlide();
+                slider.goToNextSlide();
             });
-
-			$('.news_slider_btn>.pause_btn').click(function(e) {
+            $('.snue_control_btn>.pause_btn').click(function(e) {
 				e.preventDefault();
 
 				var isPaused = $(this).data('paused');
 
 				if (isPaused) { 
-					announceSlider.startAuto();
+					slider.startAuto();
 					$(this).data('paused', false);
                     $(this).html('<i class="fa-solid fa-pause"></i>');
 				} else { 
-					announceSlider.stopAuto();
+					slider.stopAuto();
 					$(this).data('paused', true);
                     $(this).html('<i class="fa-solid fa-play"></i>');
 				}
-                
 			});
-		}
+		},
+		
+        onSlideAfter: function($slideElement, oldIndex, newIndex) { // 추가
+            $(".page > .current").text(newIndex + 1); // 추가
+        }
     });
-    
 });
 
 
@@ -312,6 +344,7 @@ $(document).ready(function() {
 			});
 		}
     });
+    
 });
 
 

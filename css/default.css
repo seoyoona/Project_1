@@ -16,10 +16,10 @@ header .popup .close_btn{position: absolute; top: 1rem; right: 1rem; cursor: poi
 .sideNav .sideList >ul >li>a{color: #333;}
 .sideNav .bot{background: #000; width: 11rem; height: 6rem; padding-top: 2rem; text-transform: uppercase; cursor: pointer;}
 .sideNav .close_btn{background: #f5f5f5; width: 5rem; height: 5rem; border-radius: 50%; color: #333; line-height: 6rem; margin-top: 2rem; margin-left: 2.5rem; cursor: pointer;}
-.side_2dep{position: absolute; top: -9rem; right: 11rem; width: 20rem; height: 35rem; background: rgba(0,0,0,.5); border-radius: 3rem; text-align: left; padding: 2rem; padding-left: 3rem; list-style: disc; margin-right: 2rem;}
-.side_2dep .tit{ font-size: 3rem; list-style: none; position: relative;}
+.side_2dep{position: absolute; top: -9rem; right: 11rem; width: 20rem; height: 35rem; background: rgba(0,0,0,.5); border-radius: 3rem; text-align: left; padding: 2rem; padding-left: 3rem; list-style: disc; margin-right: 2rem; display: none;}
+.side_2dep .tit{ font-size: 3rem; list-style: none; position: relative; color: #fff;}
 .side_2dep .tit::before{width: 9rem; height: .1rem; background: #fff; position: absolute; bottom: 0; left: 0; content: '';}
-.side_2dep li{padding-top: 1.2rem; font-size: 1.6rem;}
+.side_2dep li{padding-top: 1.2rem; font-size: 1.6rem; color: #fff;}
 
 .main_visual{position: absolute; margin: auto; background-blend-mode: #d9d9d9; justify-content: center; align-items: center; width: 100%; height: 100vh;}
 .main_visual .visual_bg{position: relative; display: flex; justify-content: center; align-items: center; margin: auto; width: 100%; height: 100%; font-size: 1.8rem;}
@@ -63,8 +63,9 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .seaerch_window form { text-align: center; align-items: center; justify-content: center; width: 10rem; height: auto; } 
 .search_window form input { border: none; font-size: 2rem; padding-bottom: 1rem; padding-right: 5rem; padding-left: 5rem; border-bottom: 2px solid #333; } 
 .dep1 .gnb_bg .search_window i { color: #333; margin-left: 3rem; } 
-.search_window i.fa-xmark { transform: translateX(30rem); color: #333; } 
-.search_window span { color: #333; float: right; transform: translateX(22rem); line-height: 2.6rem; font-weight: 500; font-size: 2rem; opacity: 70%; } 
+.search_window>.close_btn{transform: translateX(30rem); cursor: pointer;}
+.search_window i.fa-xmark {color: #333; } 
+.search_window span { color: #333; line-height: 2.6rem; font-weight: 500; font-size: 2rem; opacity: 70%; } 
 
 .menu_title { background: var(--primary) url('../sources/img/bg_gnb_txt.png') center center / cover; width: 25%; height: 100%; text-align: left; position: relative; } 
 .menu_title h2 ,.menu_title p.title_cap { margin: 1rem; } 
@@ -230,7 +231,7 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .calender ul { display: flex; width: 100%; height: 100%; } 
 .calender_left { width: 25%; height: auto; background: #fff; margin-top: 5rem;} 
 .calender_slider_btn { display: flex; justify-content: left; align-items: center; padding-bottom: 2rem; padding-left: 2rem; } 
-.calender_slider_btn div { color: #3d4a5a; border: 1px solid #3d4a5a; border-radius: 100%; width: 4rem; height: 4rem; line-height: 5rem; vertical-align: middle; text-align: center; margin-right: 1rem; } 
+.calender_slider_btn div { color: #3d4a5a; border: 1px solid #3d4a5a; border-radius: 100%; width: 4rem; height: 4rem; line-height: 5rem; vertical-align: middle; text-align: center; margin-right: 1rem; cursor: pointer;} 
 .calender_slider_btn .pause_btn { line-height: 4rem; } 
 .calender_slider_btn .add_btn { background: #c0e4f3; border: none; } 
 .calender_title { position: relative; font-size: 5rem; text-align: left; padding-top: 5rem; } 

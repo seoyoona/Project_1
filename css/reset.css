@@ -30,6 +30,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* custom */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html{font-size: 62.5%; font-family: 'SCoreDream';}
+body{overflow-x: hidden;}
 .wrap { margin: auto; } 
 .inner { width: 100%; max-width: 1440px; margin: auto; 
     /* background: rgba(255,255,255,.5); */
