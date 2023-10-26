@@ -1,9 +1,25 @@
 // fullmenu.active
 $(document).ready(function() {
     $('.icon_menu').on('click',function(){
-       $('.fullmenu_wrap').toggleClass('active');
+       $('.fullmenu_wrap').css('display','block');
+       $('body').css('overflow', 'hidden');
     });
- });
+    $('.fullmenu_wrap>.fa-xmark').on('click',function(){
+        $('.fullmenu_wrap').css('display','none');
+        $('body').css('overflow', 'auto');
+    });
+    $('.fullmenu_wrap>.close_btn').on('click',function(){
+        $('.fullmenu_wrap').css('display','none')
+    })
+});
+// $(document).ready(function() {
+//     $('.icon_menu').on('click',function(){
+//        $('.fullmenu_wrap').css('display','block');
+//     });
+//     $('.fullmenu_wrap>.fa-xmark').on('click',function(){
+//         $('.fullmenu_wrap').css('display','none');
+//     })
+//  });
 
 //  icon_search
 document.addEventListener('DOMContentLoaded', function() {

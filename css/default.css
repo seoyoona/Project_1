@@ -93,8 +93,8 @@ nav:hover .logo { background: url('../sources/img/logo_black.png') no-repeat cen
 .fullmenu_inside { max-width: 100%; height: 100%; position: relative; overflow: scroll; } 
 .fullmenu_inside>.container { margin-right: 30px; } 
 .fullmenu_dep1 > li,.fullmenu_dep2 { display: flex; } 
-.fullmenu_wrap .fa-xmark { position: absolute; top: 3rem; right: 3rem; color: #333; font-size: 5rem; cursor: pointer; } 
-.fullmenu_wrap .fa-xmark:hover { transform: rotate(90deg); } 
+.fullmenu_wrap .close_btn { position: absolute; top: 3rem; right: 3rem; color: #333; font-size: 5rem; cursor: pointer; }  
+.fullmenu_wrap .close_btn:hover { transform: rotate(90deg); } 
 
 
 .fullmenu_dep1 { display: flex; flex-direction: column; text-align: left; } 
