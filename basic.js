@@ -7,13 +7,15 @@ $(document).ready(function() {
     $('.icon_menu').on('click', function() {
         if (initialWindowWidth <= 1023) {
             $('.fullmenu_wrap2').css('display', 'block');
+            $('body').css('overflow', 'hidden');
         } else {
             $('.fullmenu_wrap').css('display', 'block');
+            $('body').css('overflow', 'hidden');
         }
-        $('body').css('overflow', 'hidden');
+        
     });
 
-    $('.fullmenu_wrap>.fa-xmark, .fullmenu_wrap>.close_btn').on('click', function() {
+    $('.fullmenu_wrap>.fa-xmark, .fullmenu_wrap>.close_btn, .fullmenu_wrap2>.logo').on('click', function() {
         $('.fullmenu_wrap, .fullmenu_wrap2').css('display', 'none');
         $('body').css('overflow', 'auto');
     });

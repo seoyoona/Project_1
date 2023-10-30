@@ -432,3 +432,10 @@ footer ul li { cursor: pointer; }
 
 
 }
+
+@media screen and (max-width:785px) {
+    .student::before,.prof::before,.general::before,.student.active:before,.prof.active::before,.general.active::before {opacity: 0; }
+    .quick{font-weight: 500; font-size: 80%; } 
+    .n_right_wrap{position: static; display: flex; width: 100%; margin-left: 2rem;}
+    .notification::before{width: 72%; top: 45%;}
+}
