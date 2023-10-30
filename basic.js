@@ -1,3 +1,5 @@
+AOS.init();
+
 // fullmenu.active
 $(document).ready(function() {
     $('.icon_menu').on('click',function(){
@@ -12,14 +14,7 @@ $(document).ready(function() {
         $('.fullmenu_wrap').css('display','none')
     })
 });
-// $(document).ready(function() {
-//     $('.icon_menu').on('click',function(){
-//        $('.fullmenu_wrap').css('display','block');
-//     });
-//     $('.fullmenu_wrap>.fa-xmark').on('click',function(){
-//         $('.fullmenu_wrap').css('display','none');
-//     })
-//  });
+
 
 //  icon_search
 document.addEventListener('DOMContentLoaded', function() {
